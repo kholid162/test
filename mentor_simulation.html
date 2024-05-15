@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agus epep</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+        }
+        main {
+            margin-top: 50px;
+            max-width: 580px;
+        }
+
+        *, *::before, *::after {
+        box-sizing: border-box;
+        }
+        @keyframes rotate {
+        100% {
+            transform: rotate(1turn);
+        }
+        }
+        .border {
+            position: relative;
+            z-index: 0;
+            overflow: hidden;
+            padding: 2rem;
+        }
+        .border::before {
+            content: '';
+            position: absolute;
+            z-index: -2;
+            left: -50%;
+            top: -50%;
+            width: 200%;
+            height: 200%;
+            background-repeat: no-repeat;
+            background-size: 50% 50%, 50% 50%;
+            background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+            background-image: linear-gradient(#FFC107, #FFC107), 
+                            linear-gradient(#3F51B5, #3F51B5), 
+                            linear-gradient(#E91E63, #E91E63), 
+                            linear-gradient(#4CAF50, #4CAF50);
+            animation: rotate 4s linear infinite;
+        }
+        .border::after {
+            content: '';
+            position: absolute;
+            z-index: -1;
+            left: 10px;
+            top: 10px;
+            width: calc(95% - 0px);
+            height: calc(93% - 0px);
+            background-color: white;
+            border-radius: 5px;
+        }
+        .profile-wrapper{
+            text-align: center;
+        }
+        .profile-wrapper h1 {
+            margin-top: 24px;
+            margin-bottom: 12px;
+            font-size: 24px;
+            font-style: bold;
+        }
+        .profile-wrapper p {
+            margin: 0;
+            color: #d4d4d4;
+        }
+        .profile-wrapper p {
+            color: #d4d4d4;
+        }
+        .profile-wrapper span{
+            color: blue;
+        }
+        .profile-picture {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+        }
+        .profile-wrapper p {
+            color: black;
+        }
+        .bio-wrapper{
+            margin-top: 24px;
+        }
+        .bio-wrapper span{
+            color: blue;
+            font-style: bold;
+        }
+        .Experiences-wrapper{
+            margin-top: 33px;
+        }
+        .Experiences-wrapper h2 {
+            margin-bottom: 30px;
+        }
+        .Experiences-wrapper p {
+            font-size: 12px;
+        }
+        .list-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 32px;
+        }
+        .list-item img {
+            width: 60px;
+            height: 60px;
+        }
+        .list {
+            display: flex;
+            align-items: center;
+        }
+        .list div{
+            margin-left: 40px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="border">
+        <div class="profile-wrapper">
+            <img class="profile-picture" src="https://i.pinimg.com/564x/9d/28/c9/9d28c9cac4e9e63750e9de7ef6a0a711.jpg" alt="">
+            <h1>Agus Epep // <span>AG</span></h1>
+            <p>
+                <a href="mailto:agusepep@.gmail.com">agusepep@gmail.com</a>
+                - Indonesia
+            </p>
+        </div>
+        <div class="bio-wrapper">
+            <p>
+                Hi everyone 👋, I'm Ilham or <b><span>Agus.</span></b>
+            </p>
+            <p>
+                Interested in software engineering specifically web technologies.
+                Currently living in Indonesia and working as a <Strong>Product Engineer</Strong> at 
+                <strong>
+                    <span>Zero One Group.</span>
+                </strong>
+
+            </p>
+        </div>
+        <div class="Experiences-wrapper">
+        <h2>Experiences</h2>
+        <ul>
+            <li class="list-item">
+                <div class="list">
+                    <img src="https://storage.googleapis.com/danacita-website-v3-prd/website_v3/images/Revou-alasan.original.png" alt="">
+                    <div>
+                        <h3>
+                            software Engineering Students
+                        </h3>
+                        <p>Revou</p>
+                    </div>
+                </div>
+                <p>Apr 2024 - present</p>
+            </li>
+            <li class="list-item">
+                <div class="list">
+                    <img src="https://storage.googleapis.com/danacita-website-v3-prd/website_v3/images/Revou-alasan.original.png" alt="">
+                    <div>
+                        <h3>
+                            software Engineering Students
+                        </h3>
+                        <p>Revou</p>
+                    </div>
+                </div>
+                <p>Apr 2024 - present</p>
+            </li>
+            <li class="list-item">
+                <div class="list">
+                    <img src="https://storage.googleapis.com/danacita-website-v3-prd/website_v3/images/Revou-alasan.original.png" alt="">
+                    <div>
+                        <h3>
+                            software Engineering Students
+                        </h3>
+                        <p>Revou</p>
+                    </div>
+                </div>
+                <p>Apr 2024 - present</p>
+            </li>
+        </ul>
+        </div>
+    </div>
+    </main>
+</body>
+</html>
